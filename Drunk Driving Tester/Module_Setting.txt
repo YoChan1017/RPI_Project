@@ -19,3 +19,11 @@ MCP3208 CH0     <--   MQ-3 A0
 RPI 브레드보드에 전원 연결
 5v Power (PIN 2)
 Ground (PIN 6)
+
+1. 패키지 다운
+-> sudo apt-get install python3-spidev
+
+2. RPI
+-> Preferences > Raspberry Pi Configuration > Interfaces > SPI 활성
+
+3. 재부팅
