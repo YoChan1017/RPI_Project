@@ -1,4 +1,18 @@
 RPI
 MQ-3
 점퍼케이블
+
 브레드보드
+
+Raspberry Pi          MCP3208             MQ-3 Sensor
+=============         =========           ===========
+3.3V  (PIN 1)   -->   VDD, VREF
+GND   (PIN 6)   -->   AGND, DGND
+GPIO11 (PIN 23) -->   CLK
+GPIO10 (PIN 19) -->   DIN
+GPIO9  (PIN 21) -->   DOUT
+GPIO8  (PIN 24) -->   CS/SHDN
+
+5V    (PIN 2)   -->   MQ-3 VCC
+GND   (PIN 6)   -->   MQ-3 GND
+MCP3208 CH0     <--   MQ-3 A0
