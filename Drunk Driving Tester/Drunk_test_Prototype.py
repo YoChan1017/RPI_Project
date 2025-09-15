@@ -3,7 +3,7 @@ import time
 
 spi = spidev.SpiDev()
 spi.open(0, 0) 
-spi.max_speed_hz = 1350000
+spi.max_speed_hz = 250000
 
 def read_channel(channel):
     cmd = 0x18 | channel  
@@ -29,4 +29,5 @@ try:
 except KeyboardInterrupt:
     spi.close()
     print("TEST END")
+
 
