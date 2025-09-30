@@ -10,9 +10,9 @@ Raspberry Pi          MCP3208             MQ-3 Sensor
 =============         =========           ===========
 3.3V  (PIN 1)   -->   VDD, VREF
 GND   (PIN 14)   -->   AGND, DGND
-GPIO11 (PIN 23) -->   CLK
 GPIO10 (PIN 19) -->   DIN
 GPIO9  (PIN 21) -->   DOUT
+GPIO11 (PIN 23) -->   CLK
 GPIO8  (PIN 24) -->   CS/SHDN
 
 5V    (PIN 4)   -->   MQ-3 VCC
@@ -34,6 +34,7 @@ Ground (PIN 20)
 -> Preferences > Raspberry Pi Configuration > Interfaces > SPI 활성
 
 3. 재부팅
+
 
 
 
