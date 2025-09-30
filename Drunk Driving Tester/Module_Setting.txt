@@ -9,7 +9,7 @@ Module
 Raspberry Pi          MCP3208             MQ-3 Sensor
 =============         =========           ===========
 3.3V  (PIN 1)   -->   VDD, VREF
-GND   (PIN 15)   -->   AGND, DGND
+GND   (PIN 14)   -->   AGND, DGND
 GPIO11 (PIN 23) -->   CLK
 GPIO10 (PIN 19) -->   DIN
 GPIO9  (PIN 21) -->   DOUT
@@ -25,7 +25,7 @@ Ground (PIN 9)    - 음극
 
 RPI LED 연결
 GPIO17 (PIN 11)
-Ground (PIN 14)
+Ground (PIN 20)
 
 1. 패키지 다운
 -> sudo apt-get install python3-spidev
@@ -34,5 +34,6 @@ Ground (PIN 14)
 -> Preferences > Raspberry Pi Configuration > Interfaces > SPI 활성
 
 3. 재부팅
+
 
 
