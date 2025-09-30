@@ -1,7 +1,9 @@
 Module
 - RPI
+- MCP3208
 - MQ-3
 - LED
+- Button Switch
 - 저항
 - 점퍼케이블
 - 브레드보드
@@ -38,6 +40,7 @@ Ground (PIN 20)
 -> Preferences > Raspberry Pi Configuration > Interfaces > SPI 활성
 
 3. 재부팅
+
 
 
 
