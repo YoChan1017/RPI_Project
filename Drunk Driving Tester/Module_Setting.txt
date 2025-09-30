@@ -42,7 +42,11 @@ Ground (PIN 20)
 3. 재부팅
 
 
+1. 패키지 다운
+-> sudo apt install sqlite3
 
+2. 데이터베이스 열기
+-> sqlite3 [DB_이름].db
 
-
-
+3. 데이터 확인
+-> SELECT * FROM log;
