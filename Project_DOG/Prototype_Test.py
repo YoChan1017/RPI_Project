@@ -44,7 +44,20 @@ def read_channel(channel):
     result = ((response[1] & 0x0F) << 8) | response[2]
     return result
 
-THRESHOLD = 1500    # 평균수치 1000~1200
+# 10초간 현재 장소/환경에 대한 평균 수치 측정
+print("Measuring baseline for 10 seconds...")
+
+samples = []
+start_time = time.time()
+while time.time() - start_time < 10:
+    value = read_channel(0)
+    samples.append(value)
+    voltage = (value / 4095.0) * 5.0
+    print(f"[Baseline] Raw: {value} | Voltage: {voltage:.2f} V")
+    time.sleep(1)
+THRESHOLD = (sum(samples) // len(samples)) + 500
+
+print(f"\n=== Baseline THRESHOLD set to: {THRESHOLD} ===\n")
     
 def log_to_db(value, message):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -73,3 +86,4 @@ try:
 except KeyboardInterrupt:
     GPIO.cleanup()
     conn.close()
+
