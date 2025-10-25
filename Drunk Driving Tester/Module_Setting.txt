@@ -27,8 +27,8 @@ GPIO27 (PIN 13)
 GND    (PIN 39)
 
 > RPI + LED
-GPIO17 (PIN 11)
 Ground (PIN 20)
+GPIO17 (PIN 11)
 
 1. 패키지 다운
 -> sudo apt-get install python3-spidev
@@ -51,6 +51,7 @@ Ground (PIN 20)
 #. RPI 브레드보드에 전원 연결
 5v Power (PIN 2)  + 양극  전원레일
 Ground   (PIN 9)  - 음극  GND레일
+
 
 
 
