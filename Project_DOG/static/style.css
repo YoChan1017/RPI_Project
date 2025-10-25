@@ -51,3 +51,13 @@ tr:nth-child(even) td {
     font-weight: bold;
 }
 
+.no-data {
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
