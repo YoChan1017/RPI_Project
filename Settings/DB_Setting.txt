@@ -1,0 +1,28 @@
+MariaDB 설치 - 라즈베리파이 OS에서 MySQL 대신 대체된 경우가 많음 (호환됨)
+$ sudo apt install mariadb-server -y
+$ sudo pip3 install mysql-connector-python OR $ sudo pip3 install --break-system-packages mysql-connector-python
+
+서비스 확인
+$ sudo systemctl status mariadb
+
+MySQL 실행
+$ sudo mysql -u root
+
+
+계정 설정 및 접속
+> GRANT ALL PRIVILEGES ON *.* TO 'piuser'@'localhost' IDENTIFIED BY '비밀번호';
+> FLUSH PRIVILEGES
+> exit
+>mysql -u root -p
+
+데이터베이스 생성 및 선택
+> CREATE DATABASE driverdb;
+> USE driverdb;
+
+음주측정 로그 테이블 생성
+CREATE TABLE IF NOT EXISTS drunk_log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    timestamp DATETIME,
+    value VARCHAR(50),
+    message VARCHAR(255)
+);
