@@ -89,12 +89,14 @@ try:
     while True:
         if GPIO.input(BUTTON_PIN) == GPIO.LOW:
             raw_value = read_channel(0)
+
+            value_str = f"{raw_value} / {THRESHOLD}"
             
             if raw_value > THRESHOLD:
-                log_to_db(raw_value, "Drunk driver")
+                log_to_db(value_str, "Drunk driver")
                 GPIO.output(LED_PIN, GPIO.HIGH)
             else:
-                log_to_db(raw_value, "PASS")
+                log_to_db(value_str, "PASS")
                 GPIO.output(LED_PIN, GPIO.LOW)
 
             time.sleep(1)
@@ -104,3 +106,4 @@ try:
 except KeyboardInterrupt:
     GPIO.cleanup()
     conn.close()
+
