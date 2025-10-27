@@ -26,3 +26,8 @@ CREATE TABLE IF NOT EXISTS drunk_log (
     value VARCHAR(50),
     message VARCHAR(255)
 );
+
+데이터 확인
+> USE driverdb;
+> SHOW TABLES;
+> SELECT * FROM drunk_log;
