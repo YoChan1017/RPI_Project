@@ -5,6 +5,6 @@
 
 Drive Of Gaurd [ D.O.G ] ( 운전자 안전주행 시스템 )
 
-1. 자율주행
-2. 얼굴인식 보안 및 졸음방지
-3. 음주측정
+> 음주측정 시스템
+
+<img width="721" height="255" alt="image" src="https://github.com/user-attachments/assets/163ed6b1-8b99-4691-9898-35231b853fe1" />
