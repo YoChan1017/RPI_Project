@@ -13,7 +13,7 @@ $ sudo mysql -u root
 > GRANT ALL PRIVILEGES ON *.* TO 'piuser'@'localhost' IDENTIFIED BY '비밀번호';
 > FLUSH PRIVILEGES
 > exit
->mysql -u root -p
+> mysql -u root -p
 
 데이터베이스 생성 및 선택
 > CREATE DATABASE driverdb;
