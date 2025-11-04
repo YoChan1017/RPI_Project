@@ -19,4 +19,6 @@ pip install flask
 # (myenv) pip install RPi.GPIO
 # (myenv) pip install python-dotenv
 # (myenv) pip install mysql-connector-python
+# (myenv) pip3 install dlib
+# (myenv) pip3 install face_recognition
 
